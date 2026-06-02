@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1780286113.95111 "di_notes.tex" "di_notes.pdf" "di_notes" 1780286123.49667 0
+["pdflatex"] 1780408790.07546 "di_notes.tex" "di_notes.pdf" "di_notes" 1780408799.94893 0
   "/Users/alex/Library/texlive/2026/texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1778038937.03565 3320 a430f046d61f34970b99e53711dc6a65 ""
   "/Users/alex/Library/texlive/2026/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1777864273.13695 3304 6a543c07045572737981351171e0505e ""
   "/Users/alex/Library/texlive/2026/texmf-var/fonts/tfm/lh/lh-t2a/lacc0500.tfm" 1780032831.07991 3164 2f388d8e352e2ccbcfbe6695a57f9890 ""
@@ -209,8 +209,8 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1777796543 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1777796423 3636774 b2fd4c6a5c73bb059945e03a5aeeef59 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "di_notes.aux" 1780286122.54524 46195 6d8600dca20d798e2d4f25376da13111 "pdflatex"
-  "di_notes.tex" 1780286113.53646 522913 63792199a69b981f510cb09fb3e2859e ""
+  "di_notes.aux" 1780408799.01292 46195 6d8600dca20d798e2d4f25376da13111 "pdflatex"
+  "di_notes.tex" 1780408789.7981 522913 63792199a69b981f510cb09fb3e2859e ""
   "fig_1.png" 1780286113.53695 33336 0a92fa845a7470df6b5b5fdff2fe7fa6 ""
   "fig_2.png" 1780286113.53734 31512 b7e733829c105bf91a9f540484a67581 ""
   "fig_3.png" 1780286113.53772 30839 55b632544d5a4263cd33abcb90d2b743 ""
