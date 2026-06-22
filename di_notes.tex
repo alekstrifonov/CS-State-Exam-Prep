@@ -5782,7 +5782,7 @@ SOA е архитектурен стил, базиран на независим
 
 \(\exists\)! права \(g \begin{cases} M_{0} \in g \\ g \parallel \overrightarrow{p}\end{cases}\)   
 
-За произволна точака \(M\) от \(g\) е в сила: \[
+За произволна точка \(M\) от \(g\) е в сила: \[
   \overrightarrow{M_{O}M} \parallel \overrightarrow{p} \iff \exists ! s \in \mathbb{R}: \overrightarrow{M_0M} = s.\overrightarrow{p}
 \] 
 
@@ -5835,7 +5835,7 @@ SOA е архитектурен стил, базиран на независим
   x = x_0 - B \lambda \\ 
   y = y_0 - A \lambda, \lambda \in \mathbb{R}
 \end{cases}
-\\ &\iff \frac{x-x_0}{B} = \frac{y - y_0}{A} \iff  \\ 
+\\ &\iff \frac{x-x_0}{-B} = \frac{y - y_0}{A} \iff  \\ 
    &\iff A(x-x_0) + B(y-y_0) = 0 \\ 
    &\iff Ax + By - Ax_0 - By_0 = 0
 \end{align*}
@@ -5886,12 +5886,12 @@ SOA е архитектурен стил, базиран на независим
 
 \textbf{Декартово уравнение на права}:
 Разглеждаме: \(g: Ax+By + C, B\not=0\), т.е. \(g \not\parallel O_{Y}\), откъдето\[
-  g: Y = -\frac{A}{B}x - \frac{C}{B}
+  g: y = -\frac{A}{B}x - \frac{C}{B}
 \]  
 
 Полагаме: \(k := \frac{-A}{B}, n := \frac{-C}{B}\) 
 
-Получаваме, че \(y = kx + n\). \(k = \tg \alpha, \alpha = \measuredangle(O_{X}^{+}, g)\), където \((O, n)\) е пресечната точка на \(g\) и \(O_{Y}\)     
+Получаваме, че \(y = kx + n\). \(k = \tg \alpha, \alpha = \measuredangle(O_{X}^{+}, g)\), където \((O_{Y}, n)\) е пресечната точка на \(g\) и \(O_{Y}\)     
 
 \textbf{Нормално уравнение на права}: 
 Нека \(g: Ax + By + C = 0\) 
@@ -5901,7 +5901,7 @@ SOA е архитектурен стил, базиран на независим
 \(g \perp \overrightarrow{n}_{g}(A, B)\) - нормален вектор.
 
 \[
-  |\overrightarrow{n}_{g}| = \sqrt{A^{2} + B^{2}} \Rightarrow \overrightarrow{n}_1\left (\frac{A}{\sqrt{A^{2} + B^{2}}}, \frac{B}{\sqrt{A^{2}, B^{2}}}\right) 
+  |\overrightarrow{n}_{g}| = \sqrt{A^{2} + B^{2}} \Rightarrow \overrightarrow{n}_1\left (\frac{A}{\sqrt{A^{2} + B^{2}}}, \frac{B}{\sqrt{A^{2}+ B^{2}}}\right) 
 \] 
 
 \(\overrightarrow{n}_1 \) е  единичен нормален вектор на \(g\)  
@@ -5910,7 +5910,7 @@ SOA е архитектурен стил, базиран на независим
   (\lambda A)X + (\lambda B)y + \lambda C = 0
 \]  
 
-Търсим \(\lambda = ?\), така че \(\overrightarrow{n}_1(\lambda A, \lambda B)\) д а е единичен. Искаме: \[\overrightarrow{n_1}^{2} = (\lambda A)^{2} + (\lambda B)^{2} = 1 \Rightarrow \lambda^{2} = \frac{1}{A^{2} + B^{2}} \Rightarrow \lambda = \frac{\pm 1}{\sqrt{A^{2} + B^{2}}}\]
+Търсим \(\lambda = ?\), така че \(\overrightarrow{n}_1(\lambda A, \lambda B)\) да е единичен. Искаме: \[\overrightarrow{n_1}^{2} = (\lambda A)^{2} + (\lambda B)^{2} = 1 \Rightarrow \lambda^{2} = \frac{1}{A^{2} + B^{2}} \Rightarrow \lambda = \frac{\pm 1}{\sqrt{A^{2} + B^{2}}}\]
 
 Оттук имаме, че всяка права има точно две нормални уравнения: \[
   g: \pm \frac{Ax + By + C}{\sqrt{A^{2} + B^{2}}} = 0
@@ -5926,7 +5926,7 @@ SOA е архитектурен стил, базиран на независим
  C_1 &= \delta(\text{т.}O, g)
 \end{align*}
 
-\subsection{Разстояние от точка до права. Полуравнини.}
+\subsection{Разстояние от точка до права.}
 
 Нека \(g: A_1x + B_1y + C_1 = 0\) е нормално уравнение, \(A_1^{2} + B_{1}^{2} = 1\)  
 
@@ -5954,6 +5954,76 @@ SOA е архитектурен стил, базиран на независим
 \end{align*}
 
 \(\delta\)  ни дава ориентираното разстояние от точка \(M_0\) до права \(g\).    
+
+\subsection{Полуравнини}
+
+Нека спрямо произволна афинна координатна система $K = Oxy$ е дадена правата $g$ с общо уравнение:
+\[
+Ax + By + C = 0, \quad (A, B) \neq (0, 0).
+\]
+Означаваме $l(x, y) = Ax + By + C$. Разглеждаме две различни точки $M_1(x_1, y_1)$ и $M_2(x_2, y_2)$, които не лежат на правата $g$. В сила е следната теорема.
+
+\begin{theorem}
+Точките $M_1$ и $M_2$ лежат от различни полуравнини спрямо правата $g$ тогава и само тогава, когато
+\[
+l(x_1, y_1) \cdot l(x_2, y_2) < 0.
+\]
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+\item[$(\Rightarrow)$] Нека отсечката $M_1M_2$ пресича правата $g$ в точката $M_0(x_0, y_0)$. Точката $M_0$ е вътрешна за отсечката $M_1M_2$ тогава и само тогава, когато съществува $k < 0$, такова че
+\[
+\overrightarrow{M_0M_1} = k \, \overrightarrow{M_0M_2}.
+\]
+Оттук получаваме
+\[
+\begin{cases}
+x_0 - x_1 = k(x_0 - x_2), \\
+y_0 - y_1 = k(y_0 - y_2),
+\end{cases}
+\quad\Longrightarrow\quad
+\begin{cases}
+x_0 = \dfrac{x_1 - kx_2}{1 - k},\\[1.2ex]
+y_0 = \dfrac{y_1 - ky_2}{1 - k}.
+\end{cases}
+\]
+Тъй като $M_0 \in g$, то $l(x_0, y_0) = 0$. След заместване получаваме
+\[
+l(x_1, y_1) - k\,l(x_2, y_2) = 0
+\quad\Longrightarrow\quad
+k = \frac{l(x_1, y_1)}{l(x_2, y_2)} < 0,
+\]
+което е еквивалентно на
+\[
+l(x_1, y_1) \cdot l(x_2, y_2) < 0.
+\]
+
+\item[$(\Leftarrow)$] Нека $l(x_1, y_1) \cdot l(x_2, y_2) < 0$. Означаваме
+\[
+k = \frac{l(x_1, y_1)}{l(x_2, y_2)} < 0
+\]
+и разглеждаме точката $M_0(x_0, y_0)$, определена с
+\[
+x_0 = \frac{x_1 - kx_2}{1 - k}, \qquad y_0 = \frac{y_1 - ky_2}{1 - k}.
+\]
+Тогава
+\[
+l(x_0, y_0) = \frac{l(x_1, y_1) - k\,l(x_2, y_2)}{1 - k} = 0,
+\]
+следователно $M_0 \in g$. Освен това
+\[
+\overrightarrow{M_0M_1} = k \, \overrightarrow{M_0M_2}, \quad k < 0,
+\]
+което означава, че векторите са противоположно насочени, т.е. $M_0$ е вътрешна точка за отсечката $M_1M_2$. Следователно $M_1$ и $M_2$ са от различни полуравнини спрямо $g$.
+\end{enumerate}
+\end{proof}
+
+В следствие на горната теорема аналитично описваме двете полуравнини $\lambda_g$ и $\bar{\lambda}_g$ с контур правата $g$ по следния начин:
+\[
+\lambda_g = \bigl\{ M(x, y) : l(x, y) > 0 \bigr\}, \qquad
+\bar{\lambda}_g = \bigl\{ M(x, y) : l(x, y) < 0 \bigr\}.
+\]
 \newpage
 
 \section{Уравнения на права и равнина в пространството.}
@@ -6408,7 +6478,7 @@ x_{n+1} = x_{n} - \frac{f(x_n)}{f(x_{n}) - f(b)}(b - x_n)
 
 Разпределението има вида: 
 
-\begin{table}[]
+\begin{table}
 \centering
   \begin{tabular}{lll}
   X    & 0 & 1     \\
@@ -6555,12 +6625,13 @@ x_{n+1} = x_{n} - \frac{f(x_n)}{f(x_{n}) - f(b)}(b - x_n)
 Тук \(\lambda > 0\) е константа. 
 
 \textbf{Коректност}: \[
-  \sum_{k=0}^{\infty}\frac{\lambda^{k}e^{-\lambda}}{k!} = e^{-\lambda}\sum_{\lambda^{k}}^{k!} = e^{-\lambda}e^{\lambda} = 1
+  \sum_{k=0}^{\infty}\frac{\lambda^{k}e^{-\lambda}}{k!} = e^{-\lambda}\sum \frac{\lambda^{k}}{k!} = e^{-\lambda}e^{\lambda} = 1
 \] 
 
 \textbf{Пораждаща функция}: 
+
 \[
-  g_{X}(s) = \sum_{k=0}^{\infty}P(X=k)s^{k} = \sum_{k=0}^{\infty}\frac{\lambda^{k}e^{-\lambda}}{k!}s^{k} = e^{-\lambda}\sum_{(s\lambda)^{k}}^{k!} = e^{-\lambda}e^{s\lambda} = e^{\lambda(s-1)}
+  g_{X}(s) = \sum_{k=0}^{\infty}P(X=k)s^{k} = \sum_{k=0}^{\infty}\frac{\lambda^{k}e^{-\lambda}}{k!}s^{k} = e^{-\lambda}\sum\frac{(s\lambda)^{k}}{k!} = e^{-\lambda}e^{s\lambda} = e^{\lambda(s-1)}
 \] 
 
 \textbf{Математическо очакване}: \[
